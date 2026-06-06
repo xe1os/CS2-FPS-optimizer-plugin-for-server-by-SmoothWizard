@@ -136,7 +136,7 @@ namespace SmoothWizardOptimizer
                 debugTimer = null;
                 entitiesToClearQueue.Clear();
                // Server.PrintToConsole("[SW DEBUG] Entity removal loop finished.");
-                Server.PrintToChatAll($"[{ChatColors.Red}SmoothWizard{ChatColors.White}] Entity removal loop finished.");
+               // Server.PrintToChatAll($"[{ChatColors.Red}SmoothWizard{ChatColors.White}] Entity removal loop finished.");
                 return;
             }
 
@@ -223,7 +223,7 @@ namespace SmoothWizardOptimizer
                             {
                                 Console.WriteLine($"[SmoothWizard Optimizer] [{context}] Cleared. Total entities removed: {removedTotal}");
                                 string chatMessage = $"[{ChatColors.Red}SmoothWizard Server Optimizer{ChatColors.White}] Cleanup completed. Removed {ChatColors.Green}{removedTotal}{ChatColors.White} map junk/effects.";
-                                Server.PrintToChatAll(chatMessage);
+                                // Server.PrintToChatAll(chatMessage);
                             }
                         }
                     });
